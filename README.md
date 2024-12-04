@@ -1,4 +1,4 @@
-# fit
+# vital
 
 A new Flutter project.
 

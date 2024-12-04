@@ -1,4 +1,4 @@
-package com.example.fit
+package com.example.vital
 
 import io.flutter.embedding.android.FlutterActivity
 
