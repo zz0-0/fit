@@ -1,4 +1,4 @@
-import 'package:fit/feature/app/presentation/view/layout.dart';
+import 'package:fit/feature/app/presentation/view/page/layout.dart';
 import 'package:flutter/material.dart';
 
 void main() {
