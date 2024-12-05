@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:vital/feature/beauty/presentation/view/page/beauty.dart';
 
 final selectedIndexProvider = StateProvider<int>((ref) => 0);
 final layoutWidgetProvider = Provider<Widget>((ref) {
@@ -10,7 +11,7 @@ final layoutWidgetProvider = Provider<Widget>((ref) {
     case 1:
       return const Center(child: Text('Nutrition'));
     case 2:
-      return const Center(child: Text('Beauty'));
+      return const Beauty();
     case 3:
       return const Center(child: Text('Fitness'));
     case 4:

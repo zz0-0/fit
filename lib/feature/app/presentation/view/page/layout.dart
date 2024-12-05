@@ -10,6 +10,9 @@ class Layout extends ConsumerWidget {
     final selectedIndex = ref.watch(selectedIndexProvider);
     final layoutWidget = ref.watch(layoutWidgetProvider);
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
+      ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: selectedIndex,
         destinations: const [
