@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:vital/share/provider/app/presentation/view/page/layout_provider.dart';
 
 class Layout extends ConsumerWidget {
   const Layout({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final selectedIndex = ref.watch(selectedIndexProvider);
+    final layoutWidget = ref.watch(layoutWidgetProvider);
     return Scaffold(
       bottomNavigationBar: NavigationBar(
+        selectedIndex: selectedIndex,
         destinations: const [
           NavigationDestination(
             selectedIcon: Icon(Icons.group_add),
@@ -35,7 +39,11 @@ class Layout extends ConsumerWidget {
             label: 'Settings',
           ),
         ],
+        onDestinationSelected: (index) {
+          ref.read(selectedIndexProvider.notifier).state = index;
+        },
       ),
+      body: layoutWidget,
     );
   }
 }
