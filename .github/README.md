@@ -6,6 +6,51 @@ Vital is a Flutter app designed to help you live a healthier, more balanced life
 
 **Warning:** This project is in its early stages. Use it at your own risk.
 
+## 📋 Table of Contents
+
+- [Vital 🌱](#vital-)
+  - [⚠️ Disclaimer](#️-disclaimer)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [📱 Platforms](#-platforms)
+  - [🛠️ To-Do](#️-to-do)
+  - [**To-Do List** 🛠️](#to-do-list-️)
+    - [**General Setup** 🌟](#general-setup-)
+    - [**Recipes \& Ingredients** 🍲](#recipes--ingredients-)
+      - [**UI/UX Design**](#uiux-design)
+      - [**Core Features**](#core-features)
+    - [**Fitness \& Exercise** 🏋️‍♀️](#fitness--exercise-️️)
+      - [**UI/UX Design**](#uiux-design-1)
+      - [**Core Features**](#core-features-1)
+    - [**Beauty \& Cosmetics** 💄](#beauty--cosmetics-)
+      - [**UI/UX Design**](#uiux-design-2)
+      - [**Core Features**](#core-features-2)
+    - [**Common Features Across Modules** 🔄](#common-features-across-modules-)
+    - [**Enhancements** ✨](#enhancements-)
+    - [**Testing and Optimization** 🔬](#testing-and-optimization-)
+    - [**Launch Preparation** 🚀](#launch-preparation-)
+  - [🎯 Features](#-features)
+    - [🍲 **Recipes \& Ingredients**](#-recipes--ingredients)
+    - [🏋️‍♀️ **Fitness \& Exercise**](#️️-fitness--exercise)
+    - [💄 **Beauty \& Cosmetics**](#-beauty--cosmetics)
+  - [🖥️ Getting Started](#️-getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+      - [Install Visual Studio Code](#install-visual-studio-code)
+      - [Install Flutter](#install-flutter)
+      - [Run flutter doctor](#run-flutter-doctor)
+      - [Install Chrome](#install-chrome)
+      - [Install Visual Studio](#install-visual-studio)
+      - [Install Android Studio](#install-android-studio)
+      - [Install Android toolchain](#install-android-toolchain)
+      - [Clone git repository](#clone-git-repository)
+      - [Get flutter packages](#get-flutter-packages)
+      - [Run](#run)
+        - [Run on android](#run-on-android)
+        - [Run on desktop](#run-on-desktop)
+  - [🤝 Contributing](#-contributing)
+  - [📄 License](#-license)
+  - [📬 Contact](#-contact)
+
 ## 📱 Platforms
 
 - Android 📱

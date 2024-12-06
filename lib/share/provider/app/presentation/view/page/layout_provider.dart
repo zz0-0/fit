@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:vital/feature/beauty/presentation/view/page/beauty.dart';
 
-final selectedIndexProvider = StateProvider<int>((ref) => 0);
+final layoutSelectedIndexProvider = StateProvider<int>((ref) => 0);
 final layoutWidgetProvider = Provider<Widget>((ref) {
-  final selectedIndex = ref.watch(selectedIndexProvider);
+  final selectedIndex = ref.watch(layoutSelectedIndexProvider);
   switch (selectedIndex) {
     case 0:
       return const Center(child: Text('Home'));

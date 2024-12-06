@@ -6,14 +6,50 @@ final fitnessTabsProvider = Provider<List<Widget>>((ref) {
     const Column(
       children: [
         Icon(Icons.face),
-        Text('Exercise'),
+        Text('Skin Care'),
       ],
     ),
     const Column(
       children: [
         Icon(Icons.face),
-        Text('Body'),
+        Text('Hair Care'),
+      ],
+    ),
+    const Column(
+      children: [
+        Icon(Icons.face),
+        Text('Makeup'),
+      ],
+    ),
+    const Column(
+      children: [
+        Icon(Icons.face),
+        Text('Fragrance'),
+      ],
+    ),
+    const Column(
+      children: [
+        Icon(Icons.face),
+        Text('Personal Care'),
       ],
     ),
   ];
+});
+final fitnessSelectedIndexProvider = StateProvider<int>((ref) => 0);
+final fitnessWidgetProvider = Provider<Widget>((ref) {
+  final selectedIndex = ref.watch(fitnessSelectedIndexProvider);
+  switch (selectedIndex) {
+    case 0:
+      return const Center(child: Text('Makeup'));
+    case 1:
+      return const Center(child: Text('Makeup'));
+    case 2:
+      return const Center(child: Text('Makeup'));
+    case 3:
+      return const Center(child: Text('Fragrance'));
+    case 4:
+      return const Center(child: Text('Personal Care'));
+    default:
+      return const Center(child: Text('Makeup'));
+  }
 });

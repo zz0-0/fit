@@ -7,7 +7,7 @@ class Layout extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final selectedIndex = ref.watch(selectedIndexProvider);
+    final selectedIndex = ref.watch(layoutSelectedIndexProvider);
     final layoutWidget = ref.watch(layoutWidgetProvider);
     return Scaffold(
       appBar: AppBar(
@@ -43,7 +43,7 @@ class Layout extends ConsumerWidget {
           ),
         ],
         onDestinationSelected: (index) {
-          ref.read(selectedIndexProvider.notifier).state = index;
+          ref.read(layoutSelectedIndexProvider.notifier).state = index;
         },
       ),
       body: layoutWidget,
