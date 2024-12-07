@@ -19,7 +19,7 @@ class Layout extends ConsumerWidget {
           NavigationDestination(
             selectedIcon: Icon(Icons.group_add),
             icon: Icon(Icons.group_add_outlined),
-            label: 'Home',
+            label: 'Main',
           ),
           NavigationDestination(
             selectedIcon: Icon(Icons.medication_liquid_outlined),
@@ -35,6 +35,11 @@ class Layout extends ConsumerWidget {
             selectedIcon: Icon(Icons.sports_basketball),
             icon: Icon(Icons.sports_basketball_outlined),
             label: 'Fitness',
+          ),
+          NavigationDestination(
+            selectedIcon: Icon(Icons.house),
+            icon: Icon(Icons.house_outlined),
+            label: 'Home',
           ),
           NavigationDestination(
             selectedIcon: Icon(Icons.settings),
