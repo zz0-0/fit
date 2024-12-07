@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:vital/feature/app/presentation/view/page/summary.dart';
 import 'package:vital/feature/beauty/presentation/view/page/beauty.dart';
 import 'package:vital/feature/fitness/presentation/view/page/fitness.dart';
 import 'package:vital/feature/nutrition/presentation/view/page/nutrition.dart';
@@ -9,7 +10,7 @@ final layoutWidgetProvider = Provider<Widget>((ref) {
   final selectedIndex = ref.watch(layoutSelectedIndexProvider);
   switch (selectedIndex) {
     case 0:
-      return const Center(child: Text('Main'));
+      return const Summary();
     case 1:
       return const Nutrition();
     case 2:

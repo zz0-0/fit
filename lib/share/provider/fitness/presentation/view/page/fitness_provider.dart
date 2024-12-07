@@ -5,32 +5,20 @@ final fitnessTabsProvider = Provider<List<Widget>>((ref) {
   return [
     const Column(
       children: [
-        Icon(Icons.face),
-        Text('Skin Care'),
+        Icon(Icons.schedule_outlined),
+        Text('Schedule'),
       ],
     ),
     const Column(
       children: [
-        Icon(Icons.face),
-        Text('Hair Care'),
+        Icon(Icons.person_outlined),
+        Text('Body'),
       ],
     ),
     const Column(
       children: [
-        Icon(Icons.face),
-        Text('Makeup'),
-      ],
-    ),
-    const Column(
-      children: [
-        Icon(Icons.face),
-        Text('Fragrance'),
-      ],
-    ),
-    const Column(
-      children: [
-        Icon(Icons.face),
-        Text('Personal Care'),
+        Icon(Icons.fitness_center_outlined),
+        Text('Type'),
       ],
     ),
   ];

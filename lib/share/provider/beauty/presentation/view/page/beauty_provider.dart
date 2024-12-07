@@ -7,38 +7,26 @@ final beautyTabsProvider = Provider<List<Widget>>((ref) {
   return [
     const Column(
       children: [
-        Icon(Icons.face),
-        Text('Skin Care'),
+        Icon(Icons.photo_camera_front_outlined),
+        Text('Scan'),
       ],
     ),
     const Column(
       children: [
-        Icon(Icons.face),
-        Text('Hair Care'),
+        Icon(Icons.find_in_page_outlined),
+        Text('Finder'),
       ],
     ),
     const Column(
       children: [
-        Icon(Icons.face),
-        Text('Makeup'),
+        Icon(Icons.face_retouching_natural_outlined),
+        Text('Preview'),
       ],
     ),
     const Column(
       children: [
-        Icon(Icons.face),
-        Text('Fragrance'),
-      ],
-    ),
-    const Column(
-      children: [
-        Icon(Icons.face),
-        Text('Personal Care'),
-      ],
-    ),
-    const Column(
-      children: [
-        Icon(Icons.face),
-        Text('Personal Care'),
+        Icon(Icons.list_alt_outlined),
+        Text('Ingredients'),
       ],
     ),
   ];

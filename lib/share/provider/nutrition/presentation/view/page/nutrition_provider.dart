@@ -5,32 +5,26 @@ final nutritionTabsProvider = Provider<List<Widget>>((ref) {
   return [
     const Column(
       children: [
-        Icon(Icons.face),
-        Text('Skin Care'),
+        Icon(Icons.camera_enhance_outlined),
+        Text('Scan'),
       ],
     ),
     const Column(
       children: [
-        Icon(Icons.face),
+        Icon(Icons.list_alt_outlined),
         Text('Hair Care'),
       ],
     ),
     const Column(
       children: [
-        Icon(Icons.face),
+        Icon(Icons.select_all_outlined),
         Text('Makeup'),
       ],
     ),
     const Column(
       children: [
-        Icon(Icons.face),
+        Icon(Icons.webhook_outlined),
         Text('Fragrance'),
-      ],
-    ),
-    const Column(
-      children: [
-        Icon(Icons.face),
-        Text('Personal Care'),
       ],
     ),
   ];
