@@ -13,10 +13,14 @@ class Nutrition extends ConsumerWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CategoryHorizontalList(
-            items: tabs,
-            provider: nutritionSelectedIndexProvider,
+          SizedBox(
+            height: 112,
+            child: CategoryHorizontalList(
+              items: tabs,
+              provider: nutritionSelectedIndexProvider,
+            ),
           ),
           Expanded(child: page),
         ],

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:vital/feature/beauty/presentation/view/page/ingredient.dart';
-import 'package:vital/feature/beauty/presentation/view/page/product.dart';
-import 'package:vital/feature/beauty/presentation/view/page/scan.dart';
+import 'package:vital/feature/beauty/presentation/view/page/beauty_ingredient.dart';
+import 'package:vital/feature/beauty/presentation/view/page/beauty_product.dart';
+import 'package:vital/feature/beauty/presentation/view/page/beauty_scan.dart';
 
 final beautyTabsProvider = Provider<List<Widget>>((ref) {
   return [
@@ -31,16 +31,12 @@ final beautyWidgetProvider = Provider<Widget>((ref) {
   final selectedIndex = ref.watch(beautySelectedIndexProvider);
   switch (selectedIndex) {
     case 0:
-      return const Scan();
+      return const BeautyScan();
     case 1:
-      return const Product();
+      return const BeautyProduct();
     case 2:
-      return const Ingredient();
-    // case 3:
-    //   return const Center(child: Text('Fragrance'));
-    // case 4:
-    //   return const Center(child: Text('Personal Care'));
+      return const BeautyIngredient();
     default:
-      return const Scan();
+      return const BeautyScan();
   }
 });
