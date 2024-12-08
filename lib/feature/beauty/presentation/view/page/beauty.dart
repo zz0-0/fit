@@ -16,7 +16,7 @@ class Beauty extends ConsumerWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            height: 128,
+            height: 112,
             child: CategoryHorizontalList(
               items: tabs,
               provider: beautySelectedIndexProvider,

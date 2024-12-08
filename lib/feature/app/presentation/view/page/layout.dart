@@ -42,6 +42,11 @@ class Layout extends ConsumerWidget {
             label: 'Home',
           ),
           NavigationDestination(
+            selectedIcon: Icon(Icons.monetization_on),
+            icon: Icon(Icons.monetization_on_outlined),
+            label: 'Finance',
+          ),
+          NavigationDestination(
             selectedIcon: Icon(Icons.settings),
             icon: Icon(Icons.settings_outlined),
             label: 'Settings',

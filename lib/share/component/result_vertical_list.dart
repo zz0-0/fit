@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class CategoryHorizontalList extends ConsumerStatefulWidget {
-  const CategoryHorizontalList({
+class ResultVerticalList extends ConsumerStatefulWidget {
+  const ResultVerticalList({
     required this.items,
     required this.provider,
     super.key,
@@ -13,11 +13,10 @@ class CategoryHorizontalList extends ConsumerStatefulWidget {
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() =>
-      _CategoryHorizontalListState();
+      _ResultVerticalListState();
 }
 
-class _CategoryHorizontalListState
-    extends ConsumerState<CategoryHorizontalList> {
+class _ResultVerticalListState extends ConsumerState<ResultVerticalList> {
   @override
   void initState() {
     super.initState();
@@ -28,15 +27,14 @@ class _CategoryHorizontalListState
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('Category', style: TextStyle(fontSize: 20)),
+        const Text('Result', style: TextStyle(fontSize: 20)),
         const SizedBox(height: 20),
         Expanded(
           child: ListView.separated(
             controller: ScrollController(),
             shrinkWrap: true,
-            scrollDirection: Axis.horizontal,
             separatorBuilder: (BuildContext context, int index) {
-              return const SizedBox(width: 16);
+              return const SizedBox(height: 16);
             },
             itemCount: widget.items.length,
             itemBuilder: (context, index) {
@@ -45,7 +43,21 @@ class _CategoryHorizontalListState
                 onTap: () {
                   ref.read(widget.provider.notifier).state = index;
                 },
-                child: SizedBox(width: 65, child: widget.items[index]),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: Container(
+                    height: 64,
+                    color: Colors.grey,
+                    child: Stack(
+                      children: [
+                        Align(
+                          alignment: Alignment.bottomLeft,
+                          child: widget.items[index],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               );
             },
           ),

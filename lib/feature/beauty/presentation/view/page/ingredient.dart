@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class HairCare extends ConsumerWidget {
-  const HairCare({super.key});
+class Ingredient extends ConsumerWidget {
+  const Ingredient({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return const Center(
-      child: Text('Hair'),
-    );
+    return Container();
   }
 }
