@@ -5,15 +5,15 @@ class ProductTabVerticalList extends ConsumerStatefulWidget {
   const ProductTabVerticalList({
     required this.chips,
     required this.items,
-    required this.chipProvider,
-    required this.itemProvider,
+    required this.chipIndexProvider,
+    required this.itemIndexProvider,
     super.key,
   });
 
   final List<ChoiceChip> chips;
   final List<Widget> items;
-  final StateProvider<int> chipProvider;
-  final StateProvider<int> itemProvider;
+  final StateProvider<int> chipIndexProvider;
+  final StateProvider<int> itemIndexProvider;
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() =>
@@ -51,7 +51,7 @@ class _ProductTabVerticalListState
               return GestureDetector(
                 behavior: HitTestBehavior.translucent,
                 onTap: () {
-                  ref.read(widget.itemProvider.notifier).state = index;
+                  ref.read(widget.itemIndexProvider.notifier).state = index;
                 },
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8),

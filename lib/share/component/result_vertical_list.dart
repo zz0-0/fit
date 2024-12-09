@@ -4,12 +4,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 class ResultVerticalList extends ConsumerStatefulWidget {
   const ResultVerticalList({
     required this.items,
-    required this.provider,
+    required this.indexProvider,
     super.key,
   });
 
   final List<Widget> items;
-  final StateProvider<int> provider;
+  final StateProvider<int> indexProvider;
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() =>
@@ -41,7 +41,7 @@ class _ResultVerticalListState extends ConsumerState<ResultVerticalList> {
               return GestureDetector(
                 behavior: HitTestBehavior.translucent,
                 onTap: () {
-                  ref.read(widget.provider.notifier).state = index;
+                  ref.read(widget.indexProvider.notifier).state = index;
                 },
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8),

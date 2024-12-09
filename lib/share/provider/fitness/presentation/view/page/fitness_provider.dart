@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:vital/feature/fitness/presentation/view/page/fitness_body.dart';
+import 'package:vital/feature/fitness/presentation/view/page/fitness_schedule.dart';
+import 'package:vital/feature/fitness/presentation/view/page/fitness_type.dart';
 
 final fitnessTabsProvider = Provider<List<Widget>>((ref) {
   return [
@@ -28,11 +31,11 @@ final fitnessWidgetProvider = Provider<Widget>((ref) {
   final selectedIndex = ref.watch(fitnessSelectedIndexProvider);
   switch (selectedIndex) {
     case 0:
-      return const Center(child: Text('Makeup'));
+      return const FitnessSchedule();
     case 1:
-      return const Center(child: Text('Makeup'));
+      return const FitnessBody();
     case 2:
-      return const Center(child: Text('Makeup'));
+      return const FitnessType();
     case 3:
       return const Center(child: Text('Fragrance'));
     case 4:

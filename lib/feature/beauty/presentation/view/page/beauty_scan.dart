@@ -11,7 +11,7 @@ class BeautyScan extends ConsumerWidget {
     final items = ref.watch(beautyScanItemsProvider);
     return ResultVerticalList(
       items: items,
-      provider: beautyScanItemSelectedIndexProvider,
+      indexProvider: beautyScanItemSelectedIndexProvider,
     );
   }
 }

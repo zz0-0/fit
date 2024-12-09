@@ -11,7 +11,7 @@ class NutritionScan extends ConsumerWidget {
     final items = ref.watch(nutritionScanItemsProvider);
     return ResultVerticalList(
       items: items,
-      provider: nutritionScanItemSelectedIndexProvider,
+      indexProvider: nutritionScanItemSelectedIndexProvider,
     );
   }
 }

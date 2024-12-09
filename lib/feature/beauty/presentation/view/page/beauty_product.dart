@@ -13,8 +13,8 @@ class BeautyProduct extends ConsumerWidget {
     return ProductTabVerticalList(
       chips: chips,
       items: items,
-      chipProvider: productChipSelectedIndexProvider,
-      itemProvider: productItemSelectedIndexProvider,
+      chipIndexProvider: productChipSelectedIndexProvider,
+      itemIndexProvider: productItemSelectedIndexProvider,
     );
   }
 }

@@ -20,6 +20,10 @@ final layoutWidgetProvider = Provider<Widget>((ref) {
     case 4:
       return const Center(child: Text('Home'));
     case 5:
+      return const Center(child: Text('Finance'));
+    case 6:
+      return const Center(child: Text('Trigram'));
+    case 7:
       return const Center(child: Text('Settings'));
     default:
       return const Center(child: Text('Main'));

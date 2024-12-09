@@ -4,12 +4,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 class CategoryHorizontalList extends ConsumerStatefulWidget {
   const CategoryHorizontalList({
     required this.items,
-    required this.provider,
+    required this.indexProvider,
     super.key,
   });
 
   final List<Widget> items;
-  final StateProvider<int> provider;
+  final StateProvider<int> indexProvider;
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() =>
@@ -43,7 +43,7 @@ class _CategoryHorizontalListState
               return GestureDetector(
                 behavior: HitTestBehavior.translucent,
                 onTap: () {
-                  ref.read(widget.provider.notifier).state = index;
+                  ref.read(widget.indexProvider.notifier).state = index;
                 },
                 child: SizedBox(width: 65, child: widget.items[index]),
               );

@@ -5,11 +5,13 @@ environment:
   sdk: "^3.5.4"
 description: A new Flutter project.
 dependencies:
+  body_part_selector: ^0.2.0
   cupertino_icons: "^1.0.8"
   flutter:
     sdk: flutter
   flutter_riverpod: "^2.6.1"
   pubspec_dependency_sorter: "^1.0.5"
+  table_calendar: ^3.1.2
 dev_dependencies:
   flutter_lints: "^4.0.0"
   flutter_test:

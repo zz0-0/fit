@@ -47,6 +47,11 @@ class Layout extends ConsumerWidget {
             label: 'Finance',
           ),
           NavigationDestination(
+            selectedIcon: Icon(Icons.hub),
+            icon: Icon(Icons.hub_outlined),
+            label: 'Trigram',
+          ),
+          NavigationDestination(
             selectedIcon: Icon(Icons.settings),
             icon: Icon(Icons.settings_outlined),
             label: 'Settings',
