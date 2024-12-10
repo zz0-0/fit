@@ -10,22 +10,6 @@ class Fitness extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final tabs = ref.watch(fitnessTabsProvider);
     final page = ref.watch(fitnessWidgetProvider);
-    // return Padding(
-    //   padding: const EdgeInsets.symmetric(horizontal: 20),
-    //   child: Column(
-    //     crossAxisAlignment: CrossAxisAlignment.start,
-    //     children: [
-    //       SizedBox(
-    //         height: 112,
-    //         child: CategoryHorizontalList(
-    //           items: tabs,
-    //           provider: fitnessSelectedIndexProvider,
-    //         ),
-    //       ),
-    //       Expanded(child: page),
-    //     ],
-    //   ),
-    // );
     return PageLayout(
       tabs: tabs,
       page: page,

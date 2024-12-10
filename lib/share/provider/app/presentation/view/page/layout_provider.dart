@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:vital/feature/app/presentation/view/page/summary.dart';
 import 'package:vital/feature/beauty/presentation/view/page/beauty.dart';
 import 'package:vital/feature/fitness/presentation/view/page/fitness.dart';
+import 'package:vital/feature/home/presentation/view/page/home.dart';
 import 'package:vital/feature/nutrition/presentation/view/page/nutrition.dart';
 
 final layoutSelectedIndexProvider = StateProvider<int>((ref) => 0);
@@ -18,7 +19,7 @@ final layoutWidgetProvider = Provider<Widget>((ref) {
     case 3:
       return const Fitness();
     case 4:
-      return const Center(child: Text('Home'));
+      return const Home();
     case 5:
       return const Center(child: Text('Finance'));
     case 6:

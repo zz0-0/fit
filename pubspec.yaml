@@ -7,6 +7,7 @@ description: A new Flutter project.
 dependencies:
   body_part_selector: ^0.2.0
   cupertino_icons: "^1.0.8"
+  fl_chart: ^0.69.2
   flutter:
     sdk: flutter
   flutter_riverpod: "^2.6.1"

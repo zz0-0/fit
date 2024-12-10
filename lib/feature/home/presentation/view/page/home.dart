@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:vital/share/component/page_layout.dart';
+import 'package:vital/share/provider/home/presentation/view/page/home_provider.dart';
 
-class Fitness extends ConsumerWidget {
-  const Fitness({super.key});
+class Home extends ConsumerWidget {
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: Column(
-        children: [
-          Container(),
-        ],
-      ),
+    final tabs = ref.watch(homeTabsProvider);
+    final page = ref.watch(homeWidgetProvider);
+    return PageLayout(
+      tabs: tabs,
+      page: page,
+      indexProvider: homeSelectedIndexProvider,
     );
   }
 }
